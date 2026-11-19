@@ -65,3 +65,11 @@ The app's default message is that sample line.
 - `src/App.vue` — composer, glyph-size and colour controls, export, and key.
 
 Text is case-folded; spaces and line breaks are preserved. This is a substitution cipher for fun, not encryption.
+
+## Deployment
+
+Every push to `main` builds and deploys the app to GitHub Pages via [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml):
+
+**https://danielmeurer88.github.io/visencoder/**
+
+Vite's `base` is set to `/visencoder/` to match the project-page URL.
